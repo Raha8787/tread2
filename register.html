@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ثبت‌نام | آکادمی ترید</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/IranYekan.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        fontFamily: {
+          yekan: ['IranYekan', 'sans-serif'],
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'IranYekan', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-900 to-purple-900 dark:from-gray-900 dark:to-black min-h-screen flex items-center justify-center p-6 transition-colors duration-500">
+
+  <div class="w-full max-w-4xl bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden grid md:grid-cols-2" data-aos="fade-up">
+    
+    <!-- تصویر سمت چپ -->
+    <div class="hidden md:block bg-cover bg-center" style="background-image: url('https://source.unsplash.com/500x500/?trading,finance');"></div>
+    
+    <!-- فرم ثبت‌نام -->
+    <div class="p-8">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">ثبت‌نام در آکادمی ترید</h2>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm mb-1 text-gray-600 dark:text-gray-300">ایمیل</label>
+          <input type="email" class="w-full p-2 rounded-lg border dark:border-gray-600 dark:bg-gray-700 dark:text-white" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1 text-gray-600 dark:text-gray-300">رمز عبور</label>
+          <input type="password" class="w-full p-2 rounded-lg border dark:border-gray-600 dark:bg-gray-700 dark:text-white" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1 text-gray-600 dark:text-gray-300">تکرار رمز عبور</label>
+          <input type="password" class="w-full p-2 rounded-lg border dark:border-gray-600 dark:bg-gray-700 dark:text-white" required />
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg">ثبت‌نام</button>
+      </form>
+
+      <p class="text-xs text-center text-gray-400 mt-6 dark:text-gray-500">با ثبت‌نام، با <a href="#" class="underline">قوانین سایت</a> موافقم.</p>
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
